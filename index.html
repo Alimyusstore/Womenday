@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramadan Counter</title>
+    <style>
+        body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: repeating-conic-gradient(bisque 20%, lightblue 30%, lightgreen 32%);
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#labelCounter {
+    display: block;
+    font-size: 7em;
+    text-align: center;
+}
+
+.btnContainer {
+    text-align: center;
+}
+
+.buttons {
+    padding: 15px 25px;
+    font-size: 1.7rem;
+    border-radius: 25%;
+    background-image: repeating-linear-gradient(to right bottom, rgb(225, 154, 154) 10%, rgb(136, 136, 239) 30%, rgb(241, 156, 241) 60%);
+    transition: background-image 0.5s ease-in-out;
+    color: rgb(162, 34, 34);
+}
+
+.buttons:hover {
+    background-image: repeating-linear-gradient(rgb(224, 53, 53) 10%, rgb(62, 62, 250) 30%, rgb(249, 53, 249) 60%);
+    color: white;
+    cursor: pointer;
+}
+
+.buttons:active {
+    opacity: 0.5;
+    transition: background-image 0.1s;
+}
+@media screen and (max-width: 480px){
+    .buttons {
+        padding: 5px 15px;
+        font-size: 1.2rem;
+        border-radius: 25%;
+        background-image: repeating-linear-gradient(to right bottom, rgb(225, 154, 154) 10%, rgb(136, 136, 239) 30%, rgb(241, 156, 241) 60%);
+        transition: background-image 0.5s ease-in-out;
+        color: rgb(162, 34, 34);
+    }
+}
+    </style>
+</head>
+<body>
+    <h1>Ramadan Counter</h1>
+    <label for="" id="labelCounter">0</label>
+    <div class="btnContainer">
+        <button id="decreaseBtn" class="buttons">Decrease</button>
+        <button id="resetBtn" class="buttons">Reset</button>
+        <button id="increaseBtn" class="buttons">Increase</button>
+    </div>
+</body>
+</html>
